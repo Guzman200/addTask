@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Task</title>
+
+    <!-- CDN BOOSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        .hver:hover{
+            color: red;
+            border: 1px solid red;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container pt-5">
+        <div class="row " id="app">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="text-center">Task New</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="form-task">
+                            <div class="form-group">
+                                <textarea class="form-control" style="resize: none;" id="txt_tarea" cols="30" rows="10" placeholder="Add Task"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-block form-control">ADD</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8" id="card-task">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- App.js-->
+    <script src="app.js"></script>
+</body>
+</html>
